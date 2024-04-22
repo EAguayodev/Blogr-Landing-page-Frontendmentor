@@ -87,41 +87,77 @@
     <h1>Designed for the future
     </h1>
       <div class="row">
-        <div>
-          <h3> Introducing an extensible editor</h3>
+        <div class="left-f-section">
+          <h3>Introducing an extensible editor</h3>
           <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
             The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
             videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
             change the looks of a blog.</p>
-            <h3>Robust content management</h3>
-            <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog
+            <h3 class="editor-heading">Robust content management</h3>
+            <p class="content-description">Flexible content management enables users to easily move through posts. Increase the usability of your blog
               by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
             </p>
         </div>
         <div>
-          <img src="images/illustration-editor-desktop.svg" alt="illustration-editor">
+          <picture>
+            <source media="(min-width: 650px)" srcset="images/illustration-editor-desktop.svg">
+            <source media="(min-width: 400px)" srcset="images/illustration-editor-mobile.svg">
+            <img class="illustration-editor" src="images/illustration-editor-desktop.svg" alt="illustration-editor">
+          </picture>
         </div>
       </div>
     
   </section>
   <!-- future section -->
 
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze,
-  but
-  capable of producing even the most complicated sites.
-  <!-- Footer Section -->
-
+  <!-- infrastructure section -->
+  <section class="infrastructure-container">
+    <div class="row">
+      <div>
+        <img class="phone-img" src="images/illustration-phones.svg" alt="phones">
+      </div>
+      <div>
+       <div>
+        <h2>State of the Art Infrastructure</h2>
+        <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+       </div>
+      </div>
+    </div>
+  </section>
+  <!-- infrastructure section -->
+<!-- laptop section -->
+<section class="source-container">
+  <div class="row">
+    <div>
+      <picture>
+        <source media="(min-width: 650px)" srcset="images/illustration-laptop-desktop.svg">
+        <source media="(min-width: 440px)" srcset="images/illustration-laptop-mobile.svg">
+        <img class="illust-laptop" src="images/illustration-laptop-desktop.svg" alt="laptop">
+      </picture>
+    </div>
+    <div>
+      <h3>Free, open, simple</h3>
+      <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+        <h3>Powerful tooling</h3>
+        <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze,
+          but capable of producing even the most complicated sites.</p>
+    </div>
+  </div>
+</section>
+<!-- laptop section -->
+  
+<!-- Footer Section -->
+<footer>
+  <div class="row">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</footer>
   <!-- Footer Section -->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

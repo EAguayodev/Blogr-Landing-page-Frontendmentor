@@ -1,0 +1,17 @@
+.source-container{
+    .row{
+        display: flex;
+        align-items: center;
+    }
+
+    h3{
+        color: $very-dark-blue;
+        font-family: $ubuntu;
+        font-weight: 500;
+    }
+
+    .illust-laptop{
+        position: relative;
+        right: 17rem;
+    }
+}
