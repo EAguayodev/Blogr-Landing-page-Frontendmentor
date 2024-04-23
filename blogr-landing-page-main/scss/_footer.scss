@@ -1,0 +1,20 @@
+footer{
+    background-color: $very-dark-black-blue;
+    height: 359px;
+    border-top-right-radius: 5rem;
+
+    .footer_navigation{
+        list-style: none;
+    }
+
+    .footer_navigation a{
+        color: $grayish-blue;
+        text-decoration: none;
+    }
+
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

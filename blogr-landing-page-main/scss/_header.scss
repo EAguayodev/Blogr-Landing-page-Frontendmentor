@@ -106,8 +106,10 @@ header {
             right: 10rem;
             color: $white;
         
-        .menu-category{
+        .menu-category a{
             margin: 0 20px;
+            color: $white;
+            text-decoration: none;
         }
 
             .dropdown__nav {
@@ -117,6 +119,7 @@ header {
 
                 .dropdown-nav__menu {
                     list-style: none;
+                    color: $very-dark-black-blue;
                 }
             }
         }

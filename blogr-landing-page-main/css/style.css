@@ -91,8 +91,10 @@ header .navbar .menu {
   right: 10rem;
   color: hsl(0, 0%, 100%);
 }
-header .navbar .menu .menu-category {
+header .navbar .menu .menu-category a {
   margin: 0 20px;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
 }
 header .navbar .menu .dropdown__nav {
   padding: 10px;
@@ -101,6 +103,7 @@ header .navbar .menu .dropdown__nav {
 }
 header .navbar .menu .dropdown__nav .dropdown-nav__menu {
   list-style: none;
+  color: hsl(240, 10%, 16%);
 }
 
 .future-container {
@@ -178,6 +181,9 @@ header .navbar .menu .dropdown__nav .dropdown-nav__menu {
   margin-left: 4rem;
 }
 
+.source-container {
+  overflow-x: hidden;
+}
 .source-container .row {
   display: flex;
   align-items: center;
@@ -186,10 +192,44 @@ header .navbar .menu .dropdown__nav .dropdown-nav__menu {
   color: hsl(208, 49%, 24%);
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
+  position: relative;
+  right: 14rem;
+  font-size: 30px;
+  top: 5rem;
+  margin-bottom: 1.5rem;
+}
+.source-container p {
+  width: 31rem;
+  line-height: 26px;
+  position: relative;
+  right: 14rem;
+  top: 4rem;
+  font-weight: 400;
+  font-family: "Overpass", sans-serif;
+  color: hsl(207, 13%, 34%);
 }
 .source-container .illust-laptop {
   position: relative;
   right: 17rem;
+  top: 7rem;
+}
+
+footer {
+  background-color: hsl(240, 10%, 16%);
+  height: 359px;
+  border-top-right-radius: 5rem;
+}
+footer .footer_navigation {
+  list-style: none;
+}
+footer .footer_navigation a {
+  color: hsl(240, 2%, 79%);
+  text-decoration: none;
+}
+footer .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 * {
