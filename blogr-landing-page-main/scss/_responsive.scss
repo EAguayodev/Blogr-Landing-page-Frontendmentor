@@ -1,0 +1,134 @@
+@media(max-width: 768px) {
+    header {
+        width: 23.44rem;
+
+        .navbar{
+            justify-content: space-between;
+            .menu {
+                visibility: hidden;
+            }
+    
+            .menu.show {
+                display: block;
+            }
+    
+            .btn-menu {
+                display: block;
+                border: none;
+                background: none;
+                outline: none;
+                margin-left: 12rem;
+            }
+
+            .icon-close{
+                display: none;
+            }
+        }
+
+        h1 {
+            width: 23rem;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            position: relative;
+            margin-top: 1rem;
+            width: 18rem;
+        }
+
+    }
+
+    // future section scss
+    .future-container{
+        width: 23.44rem;
+        .row{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+
+        h1{
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        h3{
+            width: 13rem;
+            left: 3rem;
+            text-align: center;
+        }
+
+        p{
+            left: -1rem;
+    text-align: center;
+    width: 22rem;
+        }
+
+        .illustration-editor{
+            left: 0;
+        }
+    }
+
+    // infrastructure scss
+
+    .infrastructure-container{
+        width: 23.44rem;
+        height: 625px;
+        .row{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .phone-img{
+            width: 328px;
+        }
+
+        h2{
+            top: -7rem;
+    left: 2rem;
+    text-align: center;
+        }
+
+        p{
+            width: 15rem;
+    position: relative;
+    text-align: center;
+    top: -5.5rem;
+    left: 6rem;
+        }
+    }
+
+    // sources
+    .source-container{
+        .row{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .illust-laptop{
+            width: 328px;
+            right: 0;
+            top: 1rem;
+        }
+    }
+
+    footer{
+        width: 23.44rem;
+        height: 900px;
+
+        .foot-logo{
+            top: 2rem;
+        }
+        .row{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+

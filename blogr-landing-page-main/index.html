@@ -18,13 +18,13 @@
           <img class="logo" src="images/logo.svg" alt="logo">
         </a>
       </div>
-      <button type="menu" class="btn-menu" id="">
+      <button type="menu" class="btn-menu" id="toggle">
         <img class="hamburger" id="hamburger-menu" src="images/icon-hamburger.svg" alt="menu">
         <img class="icon-close" id="close-icon" src="images/icon-close.svg" alt="icon close">
       </button>
       <ul class="menu" id="menu-list">
-        <li class="menu-category"><a href="#">Product</a> <img src="images/icon-arrow-light.svg"
-            alt="arrow">
+        <li class="menu-category"><a href="#">Product <img class="arrow" src="images/icon-arrow-light.svg"
+          alt="arrow"></a>
           <div class="dropdown__nav">
             <ul class="dropdown-nav__menu">
               <li>Overview</li>
@@ -35,8 +35,8 @@
             </ul>
           </div>
         </li>
-        <li class="menu-category"><a href="#">Company </a><img src="images/icon-arrow-light.svg"
-            alt="icon arrow">
+        <li class="menu-category"><a href="#">Company <img class="arrow" src="images/icon-arrow-light.svg"
+          alt="icon arrow"></a>
           <div class="dropdown__nav">
             <ul class="dropdown-nav__menu">
               <li>About</li>
@@ -46,8 +46,8 @@
             </ul>
           </div>
         </li>
-        <li class="menu-category"><a href="#">Connect </a><img src="images/icon-arrow-light.svg"
-            alt="icon arrow">
+        <li class="menu-category"><a href="#">Connect <img class="arrow" src="images/icon-arrow-light.svg"
+          alt="icon arrow"></a>
           <div class="dropdown__nav">
             <ul class="dropdown-nav__menu">
               <li>Contact</li>
@@ -93,8 +93,8 @@
       </div>
       <div>
         <picture>
-          <source media="(min-width: 650px)" srcset="images/illustration-editor-desktop.svg">
-          <source media="(min-width: 400px)" srcset="images/illustration-editor-mobile.svg">
+          <source media="(max-width: 90px)" srcset="images/illustration-editor-desktop.svg">
+          <source media="(max-width: 700px)" srcset="images/illustration-editor-mobile.svg">
           <img class="illustration-editor" src="images/illustration-editor-desktop.svg" alt="illustration-editor">
         </picture>
       </div>
@@ -126,8 +126,8 @@
     <div class="row">
       <div>
         <picture>
-          <source media="(min-width: 650px)" srcset="images/illustration-laptop-desktop.svg">
-          <source media="(min-width: 440px)" srcset="images/illustration-laptop-mobile.svg">
+          <source media="(max-width: 900px)" srcset="images/illustration-laptop-desktop.svg">
+          <source media="(max-width: 700px)" srcset="images/illustration-laptop-mobile.svg">
           <img class="illust-laptop" src="images/illustration-laptop-desktop.svg" alt="laptop">
         </picture>
       </div>
@@ -149,10 +149,13 @@
   <footer>
     <div class="row">
         <div>
-          <img src="images/logo.svg" alt="logo footer">
+          <a href="index.html">
+            <img class="foot-logo" src="images/logo.svg" alt="logo footer">
+          </a>
         </div>
         <div>
           <ul class="footer_navigation">
+            <h4>Product</h4>
             <li><a href="#">Overview</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Marketplace</a></li>
@@ -162,6 +165,7 @@
         </div>
         <div>
           <ul class="footer_navigation">
+            <h4 class="c-heading">Company</h4>
             <li><a href="#">About</a></li>
             <li><a href="#">Team</a></li>
             <li><a href="#">Blog</a></li>
@@ -170,6 +174,7 @@
         </div>
         <div>
           <ul class="footer_navigation">
+            <h4 class="connect-heading">Connect</h4>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Newsletter</a></li>
             <li><a href="#">Contact</a></li>

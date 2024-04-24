@@ -6,6 +6,7 @@
 @import 'infrastructure.scss';
 @import 'source.scss';
 @import 'footer.scss';
+@import 'responsive.scss';
 
 
 
@@ -15,7 +16,10 @@
     padding: 0;
 }
 
-
+body{
+    overflow-x: hidden;
+    position: relative;
+}
 
 header{
 
@@ -46,5 +50,3 @@ p{
     font-family: $overpass;
     font-weight: 300;
 }
-
-
