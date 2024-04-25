@@ -1,12 +1,19 @@
 @import 'variables.scss';
 
 header {
-    background-image: url(../images/bg-pattern-intro-desktop.svg);
+    background-image: url(../images/bg-pattern-intro-desktop.svg),
+    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     background-repeat: no-repeat;
-    background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-position: 25% center;
     height: 600px;
     border-bottom-left-radius: 50px;
     padding: 1.5rem;
+
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
     .arrow{
         transition: all 0.4s ease;
@@ -15,6 +22,10 @@ header {
 
     .arrow:hover{
         transform: rotate(180deg);
+    }
+
+    .btn-menu {
+        display: none;
     }
 
     .header-box {
@@ -77,10 +88,9 @@ header {
 
     }
 
-    .navbar {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
 
         .btn-signup{
             background-color: $white;
@@ -104,10 +114,6 @@ header {
         }
 
 
-        .btn-menu {
-            display: none;
-        }
-
         .menu {
             display: flex;
             align-items: center;
@@ -127,13 +133,21 @@ header {
         }
 
             .dropdown__nav {
+                border-radius: 5px;
                 padding: 10px;
                 margin-top: 1rem;
+                margin-left: 3rem;
                 visibility: hidden;
 
                 .dropdown-nav__menu {
                     list-style: none;
+                    cursor: pointer;
                     color: $very-dark-black-blue;
+                    line-height: 23px;
+                }
+
+                .dropdown-nav__menu:hover{
+                    color: $very-dark-blue;
                 }
             }
         }

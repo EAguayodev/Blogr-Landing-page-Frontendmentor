@@ -1,5 +1,8 @@
 @media(max-width: 768px) {
     header {
+        background-image: url(../images/bg-pattern-intro-mobile.svg), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        background-repeat: no-repeat;
+        background-position: 25% 31%;
         width: 23.44rem;
 
         .navbar {
@@ -9,8 +12,19 @@
                 visibility: hidden;
             }
 
+            .navbar-collapse{
+                // display: none;
+                flex-direction: column;
+            }
+
+        .dropdown-nav__menu{
+            position: static;
+        }
+
             .menu.show {
-                display: block;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             .btn-menu {
