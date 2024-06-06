@@ -72,9 +72,8 @@ header .header-box .btn-learn:hover {
   background-color: hsl(0, 0%, 100%);
   color: hsl(355, 100%, 74%);
 }
-header .navbar-collapse {
-  display: flex !important;
-  flex-basis: auto;
+header .navbar-collapse .icon-close {
+  display: none;
 }
 header .navbar-collapse .btn-signup {
   background-color: hsl(0, 0%, 100%);
@@ -276,10 +275,20 @@ footer .row {
     justify-content: space-between;
   }
   header .navbar .menu {
+    background-color: hsl(0, 0%, 100%);
     visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    line-height: 47px;
+    top: 5rem;
+    width: 360px;
+    height: 38rem;
+    right: 21rem;
   }
   header .navbar .navbar-collapse {
-    flex-direction: column;
+    display: none;
   }
   header .navbar .dropdown-nav__menu {
     position: static;
@@ -384,6 +393,7 @@ footer .row {
   footer {
     width: 23.44rem;
     height: 900px;
+    margin-top: 10rem;
   }
   footer .foot-logo {
     top: 2rem;
@@ -411,6 +421,7 @@ header .dropdown__nav {
   width: 10.5rem;
   height: 9rem;
   overflow: hidden;
+  visibility: hidden;
   position: absolute;
 }
 

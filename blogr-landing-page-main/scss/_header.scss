@@ -16,7 +16,7 @@ header {
     }
 
     .arrow{
-        transition: all 0.4s ease;
+        transition: all 0.4ms ease;
         cursor: pointer;
     }
 
@@ -89,8 +89,10 @@ header {
     }
 
     .navbar-collapse {
-        display: flex !important;
-        flex-basis: auto;
+
+    .icon-close{
+        display: none;
+    }
 
         .btn-signup{
             background-color: $white;
