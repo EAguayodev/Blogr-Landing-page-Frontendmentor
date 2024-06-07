@@ -5,8 +5,16 @@
         background-position: 25% 31%;
         width: 23.44rem;
 
+        .header-box {
+                margin-top: -18rem;
+            }
+
         .navbar {
             justify-content: space-between;
+
+            .hamburger{
+                cursor: pointer;
+            }
 
             .menu {
                 background-color: $white;
@@ -22,12 +30,12 @@
                 right: 21rem;
             }
 
-            .navbar-collapse {
-                display: none;
-            }
-
             .dropdown-nav__menu {
                 position: static;
+            }
+
+            .header-box{
+                margin-top: -18rem;
             }
 
             .menu.show {
@@ -37,16 +45,14 @@
             }
 
             .btn-menu {
-                display: block;
+                display: inline-flex;
                 border: none;
                 background: none;
                 outline: none;
+                position: relative;
+                top: 0.5rem;
                 margin-left: 12rem;
             }
-
-            // .btn__box-area{
-            //     display: none;
-            // }
 
             .icon-close {
                 display: none;

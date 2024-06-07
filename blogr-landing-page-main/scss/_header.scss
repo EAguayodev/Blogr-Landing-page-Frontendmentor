@@ -2,30 +2,41 @@
 
 header {
     background-image: url(../images/bg-pattern-intro-desktop.svg),
-    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     background-repeat: no-repeat;
     background-position: 25% center;
     height: 600px;
     border-bottom-left-radius: 50px;
     padding: 1.5rem;
 
-    .navbar{
+
+    .navbar {
         display: flex;
         justify-content: space-around;
-        align-items: center;
     }
 
-    .arrow{
-        transition: all 0.4ms ease;
+    .dropdown__nav {
+        background-color: $white;
+        color: $very-dark-blue;
+        width: 10.5rem;
+        height: 9rem;
+        overflow: hidden;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .arrow {
+        transition: all .4ms ease-in-out;
         cursor: pointer;
     }
 
-    .arrow:hover{
+    .arrow:hover {
         transform: rotate(180deg);
     }
 
     .btn-menu {
         display: none;
+        cursor: pointer;
     }
 
     .header-box {
@@ -33,19 +44,20 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        margin-top: 13rem;
+        margin-top: 7rem;
 
-        h1,p{
+        h1,
+        p {
             color: $white;
         }
 
 
-        p{
+        p {
             position: relative;
             margin-top: 1rem;
         }
 
-        .btn{
+        .btn {
             width: 137px;
             padding: 10px 20px;
             border-radius: 50px;
@@ -64,12 +76,12 @@ header {
             font-weight: 700;
         }
 
-        .btn-free:hover{
+        .btn-free:hover {
             background-color: $very-light-red-cta;
             color: $white;
         }
 
-        .btn-learn{
+        .btn-learn {
             border: 1px solid $white;
             background-color: transparent;
             color: $white;
@@ -81,20 +93,20 @@ header {
         }
 
 
-        .btn-learn:hover{
+        .btn-learn:hover {
             background-color: $white;
             color: $very-light-red-cta;
         }
 
     }
 
-    .navbar-collapse {
+    
 
-    .icon-close{
-        display: none;
-    }
+        .icon-close {
+            display: none;
+        }
 
-        .btn-signup{
+        .btn-signup {
             background-color: $white;
             color: $light-red;
             padding: 10px 20px;
@@ -104,12 +116,12 @@ header {
             font-weight: 500;
         }
 
-        .btn-signup:hover{
+        .btn-signup:hover {
             background-color: $very-light-red-cta;
             color: $white;
         }
 
-        .btn-login{
+        .btn-login {
             background: transparent;
             color: $white;
             text-decoration: none;
@@ -118,40 +130,40 @@ header {
 
         .menu {
             display: flex;
-            align-items: center;
+            justify-content: space-between;
             list-style: none;
             position: relative;
             right: 10rem;
             color: $white;
-        
-        .menu-category a{
-            margin: 0 20px;
-            color: $white;
-            text-decoration: none;
-        }
 
-        .menu-category:hover{
-            text-decoration: underline;
-        }
+            .menu-category a {
+                margin: 0 20px;
+                color: $white;
+                text-decoration: none;
+            }
 
-            .dropdown__nav {
-                border-radius: 5px;
-                padding: 10px;
-                margin-top: 1rem;
-                margin-left: 3rem;
-                visibility: hidden;
+            .menu-category:hover {
+                text-decoration: underline;
+            }
+
+    
+                
 
                 .dropdown-nav__menu {
-                    list-style: none;
-                    cursor: pointer;
-                    color: $very-dark-black-blue;
-                    line-height: 23px;
-                }
+                        background-color: $white;
+                        list-style: none;
+                        cursor: pointer;
+                        color: $very-dark-black-blue;
+                        line-height: 23px;
+                        border-radius: 5px;
+                        padding: 10px;
+                        margin-top: 1rem;
+                        margin-left: 3rem;
+                        visibility: hidden;
+                    }
 
-                .dropdown-nav__menu:hover{
+                .dropdown-nav__menu:hover {
                     color: $very-dark-blue;
                 }
-            }
         }
-    }
 }

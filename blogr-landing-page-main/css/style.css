@@ -11,10 +11,18 @@ header {
 header .navbar {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+}
+header .dropdown__nav {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(208, 49%, 24%);
+  width: 10.5rem;
+  height: 9rem;
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
 }
 header .arrow {
-  transition: all 0.4s ease;
+  transition: all 0.4ms ease-in-out;
   cursor: pointer;
 }
 header .arrow:hover {
@@ -22,15 +30,17 @@ header .arrow:hover {
 }
 header .btn-menu {
   display: none;
+  cursor: pointer;
 }
 header .header-box {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-top: 13rem;
+  margin-top: 7rem;
 }
-header .header-box h1, header .header-box p {
+header .header-box h1,
+header .header-box p {
   color: hsl(0, 0%, 100%);
 }
 header .header-box p {
@@ -72,10 +82,10 @@ header .header-box .btn-learn:hover {
   background-color: hsl(0, 0%, 100%);
   color: hsl(355, 100%, 74%);
 }
-header .navbar-collapse .icon-close {
+header .icon-close {
   display: none;
 }
-header .navbar-collapse .btn-signup {
+header .btn-signup {
   background-color: hsl(0, 0%, 100%);
   color: hsl(353, 100%, 62%);
   padding: 10px 20px;
@@ -84,45 +94,44 @@ header .navbar-collapse .btn-signup {
   font-family: "Overpass", sans-serif;
   font-weight: 500;
 }
-header .navbar-collapse .btn-signup:hover {
+header .btn-signup:hover {
   background-color: hsl(355, 100%, 74%);
   color: hsl(0, 0%, 100%);
 }
-header .navbar-collapse .btn-login {
+header .btn-login {
   background: transparent;
   color: hsl(0, 0%, 100%);
   text-decoration: none;
 }
-header .navbar-collapse .menu {
+header .menu {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   list-style: none;
   position: relative;
   right: 10rem;
   color: hsl(0, 0%, 100%);
 }
-header .navbar-collapse .menu .menu-category a {
+header .menu .menu-category a {
   margin: 0 20px;
   color: hsl(0, 0%, 100%);
   text-decoration: none;
 }
-header .navbar-collapse .menu .menu-category:hover {
+header .menu .menu-category:hover {
   text-decoration: underline;
 }
-header .navbar-collapse .menu .dropdown__nav {
+header .menu .dropdown-nav__menu {
+  background-color: hsl(0, 0%, 100%);
+  list-style: none;
+  cursor: pointer;
+  color: hsl(240, 10%, 16%);
+  line-height: 23px;
   border-radius: 5px;
   padding: 10px;
   margin-top: 1rem;
   margin-left: 3rem;
   visibility: hidden;
 }
-header .navbar-collapse .menu .dropdown__nav .dropdown-nav__menu {
-  list-style: none;
-  cursor: pointer;
-  color: hsl(240, 10%, 16%);
-  line-height: 23px;
-}
-header .navbar-collapse .menu .dropdown__nav .dropdown-nav__menu:hover {
+header .menu .dropdown-nav__menu:hover {
   color: hsl(208, 49%, 24%);
 }
 
@@ -271,8 +280,14 @@ footer .row {
     background-position: 25% 31%;
     width: 23.44rem;
   }
+  header .header-box {
+    margin-top: -18rem;
+  }
   header .navbar {
     justify-content: space-between;
+  }
+  header .navbar .hamburger {
+    cursor: pointer;
   }
   header .navbar .menu {
     background-color: hsl(0, 0%, 100%);
@@ -287,11 +302,11 @@ footer .row {
     height: 38rem;
     right: 21rem;
   }
-  header .navbar .navbar-collapse {
-    display: none;
-  }
   header .navbar .dropdown-nav__menu {
     position: static;
+  }
+  header .navbar .header-box {
+    margin-top: -18rem;
   }
   header .navbar .menu.show {
     display: flex;
@@ -299,10 +314,12 @@ footer .row {
     align-items: center;
   }
   header .navbar .btn-menu {
-    display: block;
+    display: inline-flex;
     border: none;
     background: none;
     outline: none;
+    position: relative;
+    top: 0.5rem;
     margin-left: 12rem;
   }
   header .navbar .icon-close {
