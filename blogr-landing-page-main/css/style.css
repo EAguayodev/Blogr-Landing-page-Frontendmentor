@@ -338,6 +338,7 @@ footer .row {
   }
   .future-container {
     width: 23.44rem;
+    height: 67.9rem;
   }
   .future-container .row {
     display: flex;
@@ -376,7 +377,7 @@ footer .row {
   }
   .infrastructure-container h2 {
     top: -7rem;
-    left: 2rem;
+    left: 0;
     text-align: center;
   }
   .infrastructure-container p {
@@ -384,7 +385,11 @@ footer .row {
     position: relative;
     text-align: center;
     top: -5.5rem;
-    left: 6rem;
+    left: 4.5rem;
+  }
+  .source-container {
+    width: 23.44rem;
+    height: 57.9rem;
   }
   .source-container .row {
     display: flex;
@@ -397,9 +402,12 @@ footer .row {
     top: 1rem;
   }
   .source-container h3 {
-    right: -2rem;
+    right: 0rem;
     font-size: 28px;
     top: 3rem;
+  }
+  .source-container .source-2 {
+    top: 5rem;
   }
   .source-container p {
     right: 0rem;
@@ -410,7 +418,6 @@ footer .row {
   footer {
     width: 23.44rem;
     height: 900px;
-    margin-top: 10rem;
   }
   footer .foot-logo {
     top: 2rem;
