@@ -9,23 +9,39 @@ header {
   padding: 1.5rem;
 }
 header .navbar {
+  padding: 10px 20px;
   display: flex;
+}
+header .menu-container {
+  display: flex;
+  flex-grow: 1;
   justify-content: space-around;
 }
-header .dropdown__nav {
+header .dropdown-nav__menu {
   background-color: hsl(0, 0%, 100%);
   color: hsl(208, 49%, 24%);
   width: 10.5rem;
   height: 9rem;
   overflow: hidden;
-  visibility: hidden;
+  list-style: none;
+  display: none;
+  box-shadow: -5px 29px 30px 1px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: -5px 29px 30px 1px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: -5px 29px 30px 1px rgba(0, 0, 0, 0.31);
+  line-height: 23px;
+  border-radius: 0.125rem;
+  padding: 10px;
+  margin: 1rem 0 0 3rem;
   position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 1;
 }
 header .arrow {
-  transition: all 0.4ms ease-in-out;
+  transition: transform 0.3s;
   cursor: pointer;
 }
-header .arrow:hover {
+header .menu li:hover .arrow {
   transform: rotate(180deg);
 }
 header .btn-menu {
@@ -103,35 +119,41 @@ header .btn-login {
   color: hsl(0, 0%, 100%);
   text-decoration: none;
 }
+header .menu-layout {
+  display: flex;
+  gap: 4rem;
+}
 header .menu {
   display: flex;
   justify-content: space-between;
   list-style: none;
   position: relative;
-  right: 10rem;
   color: hsl(0, 0%, 100%);
 }
-header .menu .menu-category a {
+header .menu li:hover > .dropdown-nav__menu {
+  display: block;
+}
+header .menu-category a {
   margin: 0 20px;
   color: hsl(0, 0%, 100%);
   text-decoration: none;
 }
-header .menu .menu-category:hover {
+header .nav-buttons {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+header .menu-category:hover {
   text-decoration: underline;
 }
-header .menu .dropdown-nav__menu {
-  background-color: hsl(0, 0%, 100%);
-  list-style: none;
-  cursor: pointer;
-  color: hsl(240, 10%, 16%);
-  line-height: 23px;
-  border-radius: 5px;
-  padding: 10px;
-  margin-top: 1rem;
-  margin-left: 3rem;
-  visibility: hidden;
+header .dropdown-nav__menu:hover {
+  color: hsl(208, 49%, 24%);
 }
-header .menu .dropdown-nav__menu:hover {
+header .item-dropdown {
+  cursor: pointer;
+  font-weight: 500;
+}
+header .item-dropdown:hover {
   color: hsl(208, 49%, 24%);
 }
 
@@ -281,46 +303,57 @@ footer .row {
     width: 23.44rem;
   }
   header .header-box {
-    margin-top: -18rem;
+    margin-top: 16rem;
   }
   header .navbar {
     justify-content: space-between;
-  }
-  header .navbar .hamburger {
-    cursor: pointer;
+    /* Rotate first bar */
+    /* Fade out the second bar */
+    /* Rotate last bar */
   }
   header .navbar .menu {
     background-color: hsl(0, 0%, 100%);
-    visibility: hidden;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 20px;
-    line-height: 47px;
-    top: 5rem;
-    width: 360px;
-    height: 38rem;
-    right: 21rem;
+    top: 6rem;
+    width: 324px;
+    position: absolute;
+    height: 28rem;
+    right: 2.5rem;
+    z-index: 5;
+    display: none;
+  }
+  header .navbar .menu-category a {
+    color: hsl(237, 23%, 32%);
   }
   header .navbar .dropdown-nav__menu {
     position: static;
   }
-  header .navbar .header-box {
-    margin-top: -18rem;
-  }
-  header .navbar .menu.show {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  header .navbar .nav-buttons {
+    display: none;
   }
   header .navbar .btn-menu {
-    display: inline-flex;
+    display: inline-block;
     border: none;
     background: none;
-    outline: none;
-    position: relative;
-    top: 0.5rem;
-    margin-left: 12rem;
+  }
+  header .navbar .bar-1,
+  header .navbar .bar-2,
+  header .navbar .bar-3 {
+    width: 35px;
+    height: 5px;
+    background: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  header .navbar .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  header .navbar .change .bar2 {
+    opacity: 0;
+  }
+  header .navbar .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
   }
   header .navbar .icon-close {
     display: none;
@@ -437,16 +470,6 @@ footer .row {
 body {
   overflow-x: hidden;
   position: relative;
-}
-
-header .dropdown__nav {
-  background: hsl(0, 0%, 100%);
-  color: hsl(208, 49%, 24%);
-  width: 10.5rem;
-  height: 9rem;
-  overflow: hidden;
-  visibility: hidden;
-  position: absolute;
 }
 
 html {

@@ -1,3 +1,8 @@
-const menuBtn = document.getElementById('hamburger-menu');
-const close = document.getElementById('close-icon');
-const menuList = document.getElementById('menu');
+const menuBtn = document.querySelector(".btn-menu");
+const hamburger = document.querySelector('.hamburger');
+const close = document.querySelector('.icon-close');
+const menuList = document.querySelector(".menu");
+
+hamburger.addEventListener("click", function () {
+  menuList.classList.toggle('menu');
+});

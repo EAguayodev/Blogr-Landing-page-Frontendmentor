@@ -7,51 +7,59 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Blogr</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
   <!-- header -->
-  <header id="header">
+  <header>
   <nav class="navbar">
-    <a href="index.html">
-      <img class="logo" src="images/logo.svg" alt="logo">
-    </a>
-    <button type="menu" class="btn-menu" id="toggle">
-      <img class="hamburger" id="hamburger-menu" src="images/icon-hamburger.svg" alt="menu">
-    </button>
-      <ul class="menu" id="menu-list">
-        <img class="icon-close" id="close-icon" src="images/icon-close.svg" alt="icon close">
-        <li class="menu-category"><a href="#">Product <img class="arrow" src="images/icon-arrow-light.svg"
-              alt="arrow"></a>
-            <ul class="dropdown-nav__menu">
-              <li class="item-dropdown">Overview</li>
-              <li class="item-dropdown">Pricing</li>
-              <li class="item-dropdown">Marketplace</li>
-              <li class="item-dropdown">Features</li>
-              <li class="item-dropdown">Integrations</li>
-            </ul>
-        </li>
-        <li class="menu-category"><a href="#">Company <img class="arrow" src="images/icon-arrow-light.svg"
-              alt="icon arrow"></a>
-            <ul class="dropdown-nav__menu">
-              <li class="item-dropdown">About</li>
-              <li class="item-dropdown">Team</li>
-              <li class="item-dropdown">Blog</li>
-              <li class="item-dropdown">Careers</li>
-            </ul>
-        </li>
-        <li class="menu-category"><a href="#">Connect <img class="arrow" src="images/icon-arrow-light.svg"
-              alt="icon arrow"></a>
-            <ul class="dropdown-nav__menu">
-              <li class="item-dropdown">Contact</li>
-              <li class="item-dropdown">Newsletter</li>
-              <li class="item-dropdown">LinkedIn</li>
-            </ul>
-        </li>
-        <li><a class="btn-login" href="#">Login</a></li>
-        <li><a class="btn btn-signup" href="#">Sign Up</a></li>
-      </ul>
-  </nav>
+      <a href="index.html">
+        <img class="logo" src="images/logo.svg" alt="logo">
+      </a>
+      <button type="menu" class="btn-menu" id="toggle">
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+        <!-- <img class="hamburger" id="hamburger-menu" src="images/icon-hamburger.svg" alt="menu">
+        <img class="icon-close" id="close-icon" src="images/icon-close.svg" alt="icon close"> -->
+      </button>
+      <div class="menu-container">
+        <ul class="menu" id="menu-list">
+          <li class="menu-category"><a href="#product">Product <img class="arrow" src="images/icon-arrow-light.svg"
+                alt="arrow"></a>
+              <ul class="dropdown-nav__menu">
+                <li class="item-dropdown">Overview</li>
+                <li class="item-dropdown">Pricing</li>
+                <li class="item-dropdown">Marketplace</li>
+                <li class="item-dropdown">Features</li>
+                <li class="item-dropdown">Integrations</li>
+              </ul>
+          </li>
+          <li class="menu-category"><a href="#company">Company <img class="arrow" src="images/icon-arrow-light.svg"
+                alt="icon arrow"></a>
+              <ul class="dropdown-nav__menu">
+                <li class="item-dropdown">About</li>
+                <li class="item-dropdown">Team</li>
+                <li class="item-dropdown">Blog</li>
+                <li class="item-dropdown">Careers</li>
+              </ul>
+          </li>
+          <li class="menu-category"><a href="#contact">Connect <img class="arrow" src="images/icon-arrow-light.svg"
+                alt="icon arrow"></a>
+              <ul class="dropdown-nav__menu">
+                <li class="item-dropdown">Contact</li>
+                <li class="item-dropdown">Newsletter</li>
+                <li class="item-dropdown">LinkedIn</li>
+              </ul>
+          </li>
+        </ul>
+        <div class="nav-buttons">
+          <a class="btn-login" href="#login">Login</a>
+          <a class="btn btn-signup" href="#signup">Sign Up</a>
+        </div>
+      </div>
+</nav>
     
     <div class="header-box">
       <h1>A modern publishing platform</h1>
@@ -172,7 +180,5 @@
     </div>
   </footer>
   <!-- Footer Section -->
-  <script src="js/main.js"></script>
 </body>
-
 </html>

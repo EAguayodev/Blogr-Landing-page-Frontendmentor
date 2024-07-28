@@ -11,26 +11,44 @@ header {
 
 
     .navbar {
+        padding: 10px 20px;
         display: flex;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-grow: 1;
         justify-content: space-around;
     }
 
-    .dropdown__nav {
+
+    .dropdown-nav__menu {
         background-color: $white;
         color: $very-dark-blue;
         width: 10.5rem;
         height: 9rem;
         overflow: hidden;
-        visibility: hidden;
+        list-style: none;
+        display: none;
+        box-shadow: -5px 29px 30px 1px rgba(0, 0, 0, 0.31);
+        -webkit-box-shadow: -5px 29px 30px 1px rgba(0, 0, 0, 0.31);
+        -moz-box-shadow: -5px 29px 30px 1px rgba(0, 0, 0, 0.31);
+        line-height: 23px;
+        border-radius: 0.125rem;
+        padding: 10px;
+        margin: 1rem 0 0 3rem;
         position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 1;
     }
 
     .arrow {
-        transition: all .4ms ease-in-out;
+        transition: transform 0.3s;
         cursor: pointer;
     }
 
-    .arrow:hover {
+    .menu li:hover .arrow {
         transform: rotate(180deg);
     }
 
@@ -100,70 +118,79 @@ header {
 
     }
 
+
+
+    .icon-close {
+        display: none;
+    }
+
+    .btn-signup {
+        background-color: $white;
+        color: $light-red;
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-family: $overpass;
+        font-weight: 500;
+    }
+
+    .btn-signup:hover {
+        background-color: $very-light-red-cta;
+        color: $white;
+    }
+
+    .btn-login {
+        background: transparent;
+        color: $white;
+        text-decoration: none;
+    }
+
     
 
-        .icon-close {
-            display: none;
-        }
+    .menu-layout {
+        display: flex;
+        gap: 4rem;
+    }
 
-        .btn-signup {
-            background-color: $white;
-            color: $light-red;
-            padding: 10px 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-family: $overpass;
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        position: relative;
+        color: $white;
+
+       
+    }
+         .menu li:hover>.dropdown-nav__menu {
+             display: block;
+         }
+    
+         .menu-category a {
+             margin: 0 20px;
+             color: $white;
+             text-decoration: none;
+         }
+    
+         .nav-buttons {
+             align-items: center;
+             display: flex;
+             gap: 10px;
+         }
+    
+         .menu-category:hover {
+             text-decoration: underline;
+         }
+    
+         .dropdown-nav__menu:hover {
+             color: $very-dark-blue;
+         }
+
+         .item-dropdown{
+            cursor: pointer;
             font-weight: 500;
-        }
+         }
 
-        .btn-signup:hover {
-            background-color: $very-light-red-cta;
-            color: $white;
-        }
-
-        .btn-login {
-            background: transparent;
-            color: $white;
-            text-decoration: none;
-        }
-
-
-        .menu {
-            display: flex;
-            justify-content: space-between;
-            list-style: none;
-            position: relative;
-            right: 10rem;
-            color: $white;
-
-            .menu-category a {
-                margin: 0 20px;
-                color: $white;
-                text-decoration: none;
-            }
-
-            .menu-category:hover {
-                text-decoration: underline;
-            }
-
-    
-                
-
-                .dropdown-nav__menu {
-                        background-color: $white;
-                        list-style: none;
-                        cursor: pointer;
-                        color: $very-dark-black-blue;
-                        line-height: 23px;
-                        border-radius: 5px;
-                        padding: 10px;
-                        margin-top: 1rem;
-                        margin-left: 3rem;
-                        visibility: hidden;
-                    }
-
-                .dropdown-nav__menu:hover {
-                    color: $very-dark-blue;
-                }
-        }
+         .item-dropdown:hover{
+            color: $very-dark-blue;
+         }
 }

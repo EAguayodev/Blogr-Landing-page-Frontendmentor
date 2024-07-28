@@ -20,20 +20,6 @@ body{
     position: relative;
 }
 
-header{
-
-
-    .dropdown__nav{
-        background: $white;
-        color: $very-dark-blue;
-        width: 10.5rem;
-        height: 9rem;
-        overflow: hidden;
-        visibility: hidden;
-        position: absolute;
-    }
-}
-
 
 html{
     font-size: $body-text;
