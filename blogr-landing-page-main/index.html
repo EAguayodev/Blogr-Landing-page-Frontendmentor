@@ -13,54 +13,57 @@
 <body>
   <!-- header -->
   <header>
-  <nav class="navbar">
+    <div class="head">
       <a href="index.html">
         <img class="logo" src="images/logo.svg" alt="logo">
       </a>
       <button type="menu" class="btn-menu" id="toggle">
-        <div class="bar-1"></div>
-        <div class="bar-2"></div>
-        <div class="bar-3"></div>
-        <!-- <img class="hamburger" id="hamburger-menu" src="images/icon-hamburger.svg" alt="menu">
-        <img class="icon-close" id="close-icon" src="images/icon-close.svg" alt="icon close"> -->
+        <img class="hamburger" id="hamburger-menu" src="images/icon-hamburger.svg" alt="menu">
       </button>
+    </div>
+    <nav class="navbar show">
       <div class="menu-container">
-        <ul class="menu" id="menu-list">
-          <li class="menu-category"><a href="#product">Product <img class="arrow" src="images/icon-arrow-light.svg"
-                alt="arrow"></a>
-              <ul class="dropdown-nav__menu">
-                <li class="item-dropdown">Overview</li>
-                <li class="item-dropdown">Pricing</li>
-                <li class="item-dropdown">Marketplace</li>
-                <li class="item-dropdown">Features</li>
-                <li class="item-dropdown">Integrations</li>
-              </ul>
-          </li>
-          <li class="menu-category"><a href="#company">Company <img class="arrow" src="images/icon-arrow-light.svg"
-                alt="icon arrow"></a>
-              <ul class="dropdown-nav__menu">
-                <li class="item-dropdown">About</li>
-                <li class="item-dropdown">Team</li>
-                <li class="item-dropdown">Blog</li>
-                <li class="item-dropdown">Careers</li>
-              </ul>
-          </li>
-          <li class="menu-category"><a href="#contact">Connect <img class="arrow" src="images/icon-arrow-light.svg"
-                alt="icon arrow"></a>
-              <ul class="dropdown-nav__menu">
-                <li class="item-dropdown">Contact</li>
-                <li class="item-dropdown">Newsletter</li>
-                <li class="item-dropdown">LinkedIn</li>
-              </ul>
-          </li>
+        <ul class="menu">
+          <button>Product <img class="arrow" src="images/icon-arrow-light.svg" alt="arrow"></button>
+          <div class="dropdown-nav__menu">
+            <li class="item-dropdown">Overview</li>
+            <li class="item-dropdown">Pricing</li>
+            <li class="item-dropdown">Marketplace</li>
+            <li class="item-dropdown">Features</li>
+            <li class="item-dropdown">Integrations</li>
+          </div>
         </ul>
-        <div class="nav-buttons">
-          <a class="btn-login" href="#login">Login</a>
-          <a class="btn btn-signup" href="#signup">Sign Up</a>
-        </div>
+
+
+        <ul class="menu">
+          <button>Company <img class="arrow" src="images/icon-arrow-light.svg" alt="icon arrow"></button>
+          <div class="dropdown-nav__menu">
+            <li class="item-dropdown">About</li>
+            <li class="item-dropdown">Team</li>
+            <li class="item-dropdown">Blog</li>
+            <li class="item-dropdown">Careers</li>
+          </div>
+        </ul>
+
+
+        <ul class="menu">
+          <button>Connect <img class="arrow" src="images/icon-arrow-light.svg" alt="icon arrow"></button>
+          <div class="dropdown-nav__menu">
+            <li class="item-dropdown">Contact</li>
+            <li class="item-dropdown">Newsletter</li>
+            <li class="item-dropdown">LinkedIn</li>
+          </div>
+        </ul>
       </div>
-</nav>
-    
+
+    <div class="divider"></div>
+    <div class="nav-buttons">
+      <a class="btn-login" href="#login">Login</a>
+      <a class="btn btn-signup" href="#signup">Sign Up</a>
+    </div>
+
+    </nav>
+
     <div class="header-box">
       <h1>A modern publishing platform</h1>
       <p>Grow your audience and build your online brand</p>
@@ -90,8 +93,8 @@
       </div>
       <div>
         <picture>
-          <source media="(max-width: 90px)" srcset="images/illustration-editor-desktop.svg">
-          <source media="(max-width: 700px)" srcset="images/illustration-editor-mobile.svg">
+          <source media="(min-width: 600px)" srcset="images/illustration-editor-desktop.svg">
+          <source media="(min-width: 400px)" srcset="images/illustration-editor-mobile.svg">
           <img class="illustration-editor" src="images/illustration-editor-desktop.svg" alt="illustration-editor">
         </picture>
       </div>
@@ -107,13 +110,13 @@
         <img class="phone-img" src="images/illustration-phones.svg" alt="phones">
       </div>
       <div>
-      
-          <h2>State of the Art Infrastructure</h2>
-          <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
-            connectivity.
-            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-          </p>
-        
+
+        <h2>State of the Art Infrastructure</h2>
+        <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
+          connectivity.
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>
+
       </div>
     </div>
   </section>
@@ -123,8 +126,8 @@
     <div class="row">
       <div>
         <picture>
-          <source media="(max-width: 900px)" srcset="images/illustration-laptop-desktop.svg">
-          <source media="(max-width: 700px)" srcset="images/illustration-laptop-mobile.svg">
+          <source media="(min-width: 600px)" srcset="images/illustration-laptop-desktop.svg">
+          <source media="(min-width: 400px)" srcset="images/illustration-laptop-mobile.svg">
           <img class="illust-laptop" src="images/illustration-laptop-desktop.svg" alt="laptop">
         </picture>
       </div>
@@ -145,38 +148,38 @@
   <!-- Footer Section -->
   <footer>
     <div class="row">
-        <div>
-          <a href="index.html">
-            <img class="foot-logo" src="images/logo.svg" alt="logo footer">
-          </a>
-        </div>
-        <div>
-          <ul class="footer_navigation">
-            <h4>Product</h4>
-            <li><a href="#">Overview</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Marketplace</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Integrations</a></li>
-          </ul>
-        </div>
-        <div>
-          <ul class="footer_navigation">
-            <h4 class="c-heading">Company</h4>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Careers</a></li>
-          </ul>
-        </div>
-        <div>
-          <ul class="footer_navigation">
-            <h4 class="connect-heading">Connect</h4>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Newsletter</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
+      <div>
+        <a href="index.html">
+          <img class="foot-logo" src="images/logo.svg" alt="logo footer">
+        </a>
+      </div>
+      <div>
+        <ul class="footer_navigation">
+          <h4>Product</h4>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Integrations</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="footer_navigation">
+          <h4 class="c-heading">Company</h4>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="footer_navigation">
+          <h4 class="connect-heading">Connect</h4>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
   <!-- Footer Section -->

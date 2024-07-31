@@ -1,8 +1,8 @@
-const menuBtn = document.querySelector(".btn-menu");
+// const menuBtn = document.querySelector("btn-menu");
 const hamburger = document.querySelector('.hamburger');
-const close = document.querySelector('.icon-close');
-const menuList = document.querySelector(".menu");
+const menuList = document.querySelector(".navbar");
 
 hamburger.addEventListener("click", function () {
-  menuList.classList.toggle('menu');
+  hamburger.classList.toggle('hide');
+  menuList.classList.toggle('navbar');
 });

@@ -39,5 +39,42 @@
     .illustration-editor{
         position: relative;
         left: 14rem;
+        width: 100%;
     }
+}
+
+@media(max-width: 700px){
+    // future section scss
+        .future-container {
+            width: 23.44rem;
+            height: 67.9rem;
+    
+            .row {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+            }
+    
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+    
+            h3 {
+                width: 13rem;
+                left: 3rem;
+                text-align: center;
+            }
+    
+            p {
+                left: -1rem;
+                text-align: center;
+                width: 22rem;
+            }
+    
+            .illustration-editor {
+                left: 0;
+                width: 100%;
+            }
+        }
 }

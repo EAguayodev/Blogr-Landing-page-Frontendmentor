@@ -41,3 +41,20 @@ footer{
         justify-content: space-around;
     }
 }
+
+@media(max-width: 700px){
+    footer {
+            width: 23.44rem;
+            height: 900px;
+    
+            .foot-logo {
+                top: 2rem;
+            }
+    
+            .row {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+}

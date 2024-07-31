@@ -36,3 +36,39 @@
         top: 7rem;
     }
 }
+
+@media(max-width: 700px){
+    .source-container {
+            width: 23.44rem;
+            height: 57.9rem;
+    
+            .row {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+    
+            .illust-laptop {
+                width: 328px;
+                right: 0;
+                top: 1rem;
+            }
+    
+            h3 {
+                right: 0rem;
+                font-size: 28px;
+                top: 3rem;
+            }
+    
+            .source-2 {
+                top: 5rem;
+            }
+    
+            p {
+                right: 0rem;
+                text-align: center;
+                top: 4rem;
+                width: 18rem;
+            }
+        }
+}
